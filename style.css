@@ -1,0 +1,551 @@
+.bongoCat, .bongoCat *, .bongoCat *::before, .bongoCat *::after {
+    position: absolute;
+}
+
+.bongoCat {
+    left: 350px;
+    top: 100px;
+    transform: rotate(18deg);
+}
+
+.body {
+    background: #FFF;
+    border: 5px solid #000;
+    border-radius: 50%;
+    height: 400px;
+    top: 20px;
+    width: 400px;
+}
+
+.body-merge {
+    background: #FFF;
+    border: 5px solid #000;
+    border-radius: 50% 50% 0 50%;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom: transparent;
+    height: 400px;
+    top: 51px;
+    left: 23px;
+    width: 400px;
+}
+
+.orelha-esquerda {
+    background: #FFF;
+    border: 5px solid #000;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-left-radius: 10% 90%;
+    border-top-right-radius: 90% 20%;
+    height: 65px;
+    left: 60px;
+    top:25px;
+    transform: rotate(10deg);
+    width: 65px;
+}
+
+.orelha-direita {
+    background: #fff;
+    border: 5px solid #000;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-right-radius: 90% 20%;
+    height: 85px;
+    left: 279px;
+    top:28px;
+    transform: scaleX(-1);
+    width: 88px;
+}
+
+.mancha {
+    background-color: #FFD291;
+    position: absolute;
+    height: 64px;
+    border-radius: 50% 0 0 30px;
+    transform: scaleX(-1);
+    width: 60px;
+}
+
+.olho {
+    background: #000;
+    border-radius: 50% 50% 0 0;
+    height: 20px;
+    width: 25px;
+}
+
+.olho__esquerdo {
+    left: 100px;
+    top: 125px;
+}
+
+.olho__direito {
+    left: 235px;
+    top: 120px;
+}
+
+.boca-esquerda {
+    border: 5px solid #000;
+    border-radius: 50%;
+    border-color: transparent transparent #000 transparent;
+    height: 70px;
+    left: 136px;
+    top: 75px;
+    transform: rotate(-5deg);
+    width: 40px;
+}
+
+.boca-direita {
+    border: 5px solid #000;
+    border-radius: 50%;
+    border-color: transparent transparent #000 transparent;
+    height: 70px;
+    left: 158px;
+    top: 72px;
+    transform: rotate(-10deg);
+    width: 40px;
+}
+
+.pata { 
+    background: #FFF;
+    border: 5px solid #000;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    height: 140px;
+    width: 100px;
+    z-index: 4;
+}
+
+
+.pata__esquerda {
+    left: -20px;
+    top: 120px;
+    animation: wave 1s linear 0s infinite alternate;
+}
+
+  /* Animate left pata */
+@keyframes wave {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-35deg);
+    }
+}
+
+.pata-right-down {
+    background: #FFF;
+    border: 5px solid #000;
+    border-radius: 50%;
+    border-top-color: transparent;
+    left: 510px;
+    top: 310px;
+    height: 140px;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 100px;
+    z-index: 2;
+}
+
+.pata-merge-right {
+    background: #FFF;
+    height: 57px;
+    left: 545px;
+    top: 324px;
+    position: absolute;
+    width: 100px;
+    transform: rotate(15deg);
+    z-index: 2;
+}
+
+.pata-detail-small {
+    background: #FEB4B5;
+    border-radius: 50%;
+    height: 20px;
+    width: 15px;
+    transform: rotate(45deg);
+}
+
+.pata-detail-large {
+    background: #FEB4B5;
+    border-radius: 50%;
+    height: 25px;
+    width: 20px;
+}
+
+.pata-detail__top {
+    left: 35px;
+    top: 10px;
+}
+
+.pata-detail__left {
+    left: 15px;
+    top: 25px;
+}
+
+.pata-detail__right {
+    left: 52px;
+    top: 22px;
+}
+
+.pata-detail__bottom {
+    left: 32px;
+    top: 38px;
+}
+
+.desk {
+    border: 5px solid #1976d2;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    height: 300px;
+    left: 100px;
+    position: absolute;
+    top: 350px;
+    width: 700px;
+    transform: rotate(15deg);
+    z-index: 1;
+}
+
+.desk-detail-H {
+    border: 4px solid #fff;
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    transform: rotate(-2deg);
+}
+
+.desk-detail-H1 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 40px;
+    position: absolute;
+    left: 55px;
+    top: 50px;
+    transform: rotate(90deg);
+}
+
+.desk-detail-H2 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    transform: rotate(-2deg);
+}
+
+.desk-detail-E {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+    left: 110px;
+    top: 28px;
+    transform: rotate(-2deg);
+}
+
+.desk-detail-E1 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 35px;
+    border-radius: 40px;
+    position: absolute;
+    left: 130px;
+    top: 10px;
+    transform: rotate(90deg);
+}
+
+.desk-detail-E2 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 35px;
+    border-radius: 40px;
+    position: absolute;
+    left: 130px;
+    top: 50px;
+    transform: rotate(90deg);
+}
+
+.desk-detail-E3 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 35px;
+    border-radius: 40px;
+    position: absolute;
+    left: 130px;
+    top: 90px;
+    transform: rotate(90deg);
+}
+
+.desk-detail-L {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+    left: 175px;
+    top: 30px;
+    transform: rotate(-2deg);
+}
+
+.desk-detail-L1 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 35px;
+    position: absolute;
+    border-radius: 40px;
+    left: 195px;
+    top: 92px;
+    transform: rotate(90deg);
+}
+
+
+.desk-detail-L2 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+    left: 235px;
+    top: 30px;
+    transform: rotate(-2deg);
+}
+
+.desk-detail-L2-1 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 35px;
+    position: absolute;
+    border-radius: 40px;
+    left: 255px;
+    top: 92px;
+    transform: rotate(90deg);
+}
+
+.desk-detail-O {
+    background: transparent;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    height: 50px;
+    width: 80px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 40px;
+    left: 275px;
+}
+
+.desk-detail-F {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 60px;
+    position: absolute;
+    border-radius: 40px;
+    left: 270px;
+    top: 130px;
+    transform: rotate(-2deg);
+}
+
+.desk-detail-F1 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 35px;
+    position: absolute;
+    border-radius: 40px;
+    left: 290px;
+    top: 112px;
+    transform: rotate(90deg);
+}
+
+.desk-detail-F2 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 32px;
+    position: absolute;
+    border-radius: 40px;
+    left: 290px;
+    top: 142px;
+    transform: rotate(90deg);
+}
+
+.desk-detail-FO {
+    background: transparent;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 60px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 135px;
+    left: 310px;
+}
+
+.desk-detail-R {
+    background: transparent;
+    border: 6px solid #fff;
+    border-radius: 50% 50% 0 0;
+    height: 30px;
+    width: 25px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 125px;
+    left: 390px;
+}
+
+.desk-detail-R1 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 32px;
+    position: absolute;
+    border-radius: 40px;
+    left: 388px;
+    top: 160px;
+    transform: rotate(-2deg);
+}
+
+.desk-detail-R2 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 32px;
+    position: absolute;
+    border-radius: 40px;
+    left: 415px;
+    top: 160px;
+    transform: rotate(-25deg);
+}
+
+.desk-detail-FE {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 60px;
+    position: absolute;
+    border-radius: 40px;
+    left: 440px;
+    top: 130px;
+    transform: rotate(-2deg);
+}
+
+.desk-detail-FE1 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 35px;
+    position: absolute;
+    border-radius: 40px;
+    left: 460px;
+    top: 112px;
+    transform: rotate(90deg);
+}
+
+.desk-detail-FE2 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 32px;
+    position: absolute;
+    border-radius: 40px;
+    left: 460px;
+    top: 142px;
+    transform: rotate(90deg);
+}
+
+.desk-detail-FE3 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 32px;
+    position: absolute;
+    border-radius: 40px;
+    left: 460px;
+    top: 174px;
+    transform: rotate(90deg);
+}
+
+.desk-detail-G {
+    background: transparent;
+    border: 6px solid #fff;
+    border-radius: 15px;
+    border-bottom: transparent;
+    height: 50px;
+    width: 60px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 135px;
+    left: 490px;
+}
+
+.desk-detail-G1 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 30px;
+    border-radius: 0 20px 20px 0;
+    position: absolute;
+    left: 545px;
+    top: 160px;
+    transform: rotate(0deg);
+}
+
+.desk-detail-G2 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 20px;
+    border-radius: 0 20px 20px 0;
+    position: absolute;
+    left: 530px;
+    top: 150px;
+    transform: rotate(90deg);
+}
+
+.desk-detail-GO {
+    background: transparent;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 60px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 135px;
+    left: 555px;
+}
+
+.desk-detail-N {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 60px;
+    position: absolute;
+    border-radius: 40px;
+    left: 630px;
+    top: 130px;
+    transform: rotate(-2deg);
+}
+
+.desk-detail-N1 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 64px;
+    position: absolute;
+    border-radius: 40px;
+    left: 648px;
+    top: 130px;
+    transform: rotate(-30deg);
+}
+
+.desk-detail-N2 {
+    background: transparent;
+    border: 4px solid #fff;
+    height: 60px;
+    position: absolute;
+    border-radius: 40px;
+    left: 668px;
+    top: 130px;
+    transform: rotate(0deg);
+}
+
+
+.desk-detail-top {
+    background: linear-gradient(84.41deg, #1AD2FF -10.35%, #0056AF 42.1%);
+    border: 4px solid #fff;
+    height: 210px;
+    border-top: #1976d2;
+}
